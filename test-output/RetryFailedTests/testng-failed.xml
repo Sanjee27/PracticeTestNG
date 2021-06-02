@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RetryFailedTests]">
+  <listeners>
+    <listener class-name="analyzer.TestTransformer"/>
+    <listener class-name="listener.TestNGListeners"/>
+  </listeners>
+  <test thread-count="5" name="retryMultipleFailedTests(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="PracticeTestNG.PracticeTestNG.RetryExample">
+        <methods>
+          <include name="test2"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- PracticeTestNG.PracticeTestNG.RetryExample -->
+    </classes>
+  </test> <!-- retryMultipleFailedTests(failed) -->
+</suite> <!-- Failed suite [RetryFailedTests] -->

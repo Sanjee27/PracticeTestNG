@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite name="RetryFailedTests" verbose="1">
+
+<listeners>
+	<listener class-name="analyzer.TestTransformer"/>
+	<listener class-name="listener.TestNGListeners"></listener>
+</listeners>
+
+<test name="retryMultipleFailedTests">
+<parameter name="browser" value="Chrome"/>
+	<classes>
+		 
+		<class name="PracticeTestNG.PracticeTestNG.Sample"/>	
+		<class name="PracticeTestNG.PracticeTestNG.RetryExample"/>
+	</classes>
+</test>
+
+</suite>

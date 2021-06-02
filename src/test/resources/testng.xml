@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+
+<suite name="Sanity" parallel="tests"> 
+   
+  <test name="firefox test">
+  
+  <parameter name="browser" value="FF"/>
+	 <classes>
+	   <class name="PracticeTestNG.PracticeTestNG.Sample"/>
+	 </classes>
+   </test>
+   
+  <test name="chrome test">
+  
+  <parameter name="browser" value="Chrome"/>
+     <classes>
+       <class name="PracticeTestNG.PracticeTestNG.Sample"/>
+     </classes>
+   </test>
+</suite>
+

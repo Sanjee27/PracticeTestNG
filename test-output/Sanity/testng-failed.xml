@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sanity]" parallel="tests">
+  <test thread-count="5" name="firefox test(failed)" parallel="tests">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="PracticeTestNG.PracticeTestNG.Sample">
+        <methods>
+          <include name="browserSelection" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- PracticeTestNG.PracticeTestNG.Sample -->
+    </classes>
+  </test> <!-- firefox test(failed) -->
+</suite> <!-- Failed suite [Sanity] -->
